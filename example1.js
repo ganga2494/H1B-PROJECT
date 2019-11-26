@@ -34,7 +34,7 @@ simpleGit.addConfig('user.name','gangadhar');
   simpleGitPromise.add('.')
     .then(
        (addSuccess) => {
-          console.log(addSuccess);
+          console.log(addSuccess,"ssss");
        }, (failedAdd) => {
           console.log('adding files failed');
     });
@@ -42,7 +42,7 @@ simpleGit.addConfig('user.name','gangadhar');
  simpleGitPromise.commit('Intial commit by simplegit')
    .then(
       (successCommit) => {
-        console.log(successCommit);
+        console.log(successCommit,"cfkjqfcjq");
      }, (failed) => {
         console.log('failed commmit');
  });

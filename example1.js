@@ -48,7 +48,7 @@ simpleGit.addConfig('user.name','gangadhar');
         console.log('failed commmit');
  });
 // Finally push to online repository
- simpleGitPromise.push('origin3','master')
+ simpleGitPromise.push('origin','master')
     .then((success) => {
        console.log('repo successfully pushed');
     },(failed)=> {

@@ -24,7 +24,7 @@ const repo = 'dummy';  //Repo name
 const userName = 'ganga2494';
 //const password = 'Karanam@2494';
 // Set up GitHub url like this so no manual entry of user pass needed
-const gitHubUrl = `https://github.com/${userName}/ganga`;
+const gitHubUrl = `https://github.com/${userName}/H1B-PROJECT`;
 console.log(gitHubUrl)
 // add local git config like username and email
 simpleGit.addConfig('user.email','ganga2494@gmail.com');
@@ -39,6 +39,13 @@ simpleGit.addConfig('user.name','gangadhar');
        }, (failedAdd) => {
           console.log('adding files failed');
     });
+	simpleGitPromise.pull('origin','master')
+   .then(
+      (successCommit) => {
+        console.log(successCommit);
+     }, (failed) => {
+        console.log('failed commmit');
+ });
 // Commit files as Initial Commit
  simpleGitPromise.commit('Intial commit by simplegit')
    .then(

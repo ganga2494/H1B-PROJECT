@@ -30,7 +30,6 @@ console.log(gitHubUrl)
 simpleGit.addConfig('user.email','ganga2494@gmail.com');
 simpleGit.addConfig('user.name','gangadhar');
 // Add remore repo url as origin to repo
-//simpleGitPromise.addRemote('origin',gitHubUrl);
 // Add all files for commit
   simpleGitPromise.add('.')
     .then(

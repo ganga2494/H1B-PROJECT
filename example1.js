@@ -24,7 +24,7 @@ const repo = 'dummy';  //Repo name
 const userName = 'ganga2494';
 const password = 'Karanam@2494';
 // Set up GitHub url like this so no manual entry of user pass needed
-const gitHubUrl = `https://${userName}:${password}@github.com/${userName}/${repo}`;
+const gitHubUrl = `https://github.com/${userName}/${repo}`;
 // add local git config like username and email
 simpleGit.addConfig('user.email','ganga2494@gmail.com');
 simpleGit.addConfig('user.name','gangadhar');

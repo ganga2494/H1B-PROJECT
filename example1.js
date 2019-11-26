@@ -22,7 +22,7 @@ var name = "test-reo-2";
 const repo = 'dummy';  //Repo name
 // User name and password of your GitHub
 const userName = 'ganga2494';
-const password = 'Karanam@2494';
+//const password = 'Karanam@2494';
 // Set up GitHub url like this so no manual entry of user pass needed
 const gitHubUrl = `https://github.com/${userName}/H1B-PROJECT`;
 console.log(gitHubUrl)

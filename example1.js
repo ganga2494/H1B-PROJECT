@@ -24,13 +24,13 @@ const repo = 'dummy';  //Repo name
 const userName = 'ganga2494';
 //const password = 'Karanam@2494';
 // Set up GitHub url like this so no manual entry of user pass needed
-const gitHubUrl = `https://github.com/${userName}/H1B-PROJECT`;
+const gitHubUrl = `https://github.com/${userName}/ganga`;
 console.log(gitHubUrl)
 // add local git config like username and email
 simpleGit.addConfig('user.email','ganga2494@gmail.com');
 simpleGit.addConfig('user.name','gangadhar');
 // Add remore repo url as origin to repo
-simpleGitPromise.addRemote('origin2',gitHubUrl);
+simpleGitPromise.addRemote('origin3',gitHubUrl);
 // Add all files for commit
   simpleGitPromise.add('.')
     .then(
@@ -48,7 +48,7 @@ simpleGitPromise.addRemote('origin2',gitHubUrl);
         console.log('failed commmit');
  });
 // Finally push to online repository
- simpleGitPromise.push('origin2','master')
+ simpleGitPromise.push('origin3','master')
     .then((success) => {
        console.log('repo successfully pushed');
     },(failed)=> {

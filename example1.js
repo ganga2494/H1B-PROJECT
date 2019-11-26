@@ -30,11 +30,13 @@ console.log(gitHubUrl)
 simpleGit.addConfig('user.email','ganga2494@gmail.com');
 simpleGit.addConfig('user.name','gangadhar');
 // Add remore repo url as origin to repo
+//simpleGitPromise.addRemote('origin',gitHubUrl);
 // Add all files for commit
+console.log(simpleGitPromise,"vv")
   simpleGitPromise.add('.')
     .then(
        (addSuccess) => {
-          console.log(addSuccess,"ssss");
+          console.log(addSuccess);
        }, (failedAdd) => {
           console.log('adding files failed');
     });
@@ -42,7 +44,7 @@ simpleGit.addConfig('user.name','gangadhar');
  simpleGitPromise.commit('Intial commit by simplegit')
    .then(
       (successCommit) => {
-        console.log(successCommit,"cfkjqfcjq");
+        console.log(successCommit);
      }, (failed) => {
         console.log('failed commmit');
  });

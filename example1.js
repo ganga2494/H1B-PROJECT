@@ -30,9 +30,8 @@ console.log(gitHubUrl)
 simpleGit.addConfig('user.email','ganga2494@gmail.com');
 simpleGit.addConfig('user.name','gangadhar');
 // Add remore repo url as origin to repo
-//simpleGitPromise.addRemote('origin',gitHubUrl);
+simpleGitPromise.addRemote('origin2',gitHubUrl);
 // Add all files for commit
-console.log(simpleGitPromise.add('.'),"vv")
   simpleGitPromise.add('.')
     .then(
        (addSuccess) => {
@@ -49,7 +48,7 @@ console.log(simpleGitPromise.add('.'),"vv")
         console.log('failed commmit');
  });
 // Finally push to online repository
- simpleGitPromise.push('origin','master')
+ simpleGitPromise.push('origin2','master')
     .then((success) => {
        console.log('repo successfully pushed');
     },(failed)=> {

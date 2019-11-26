@@ -32,7 +32,7 @@ simpleGit.addConfig('user.name','gangadhar');
 // Add remore repo url as origin to repo
 //simpleGitPromise.addRemote('origin',gitHubUrl);
 // Add all files for commit
-console.log(simpleGitPromise.add,"vv")
+console.log(simpleGitPromise.add('.'),"vv")
   simpleGitPromise.add('.')
     .then(
        (addSuccess) => {

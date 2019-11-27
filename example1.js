@@ -12,7 +12,6 @@ const simpleGitPromise = require('simple-git/promise')();
 });
 // Variables for Repo name and description
 var description = "repo creation using git api";
-var name = "test-reo-2";
 //Create a Repository online via Github Api
 /*const createGitHubRepo =  octokit.repos.create(
    {'myrepo', repoDescription}

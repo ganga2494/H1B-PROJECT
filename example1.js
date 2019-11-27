@@ -2,7 +2,7 @@ const octokit = require('@octokit/rest')();
 // Authentication using username and password
 const simpleGit = require('simple-git')();
 // Shelljs package for running shell tasks optional
-//const shellJs = require('shelljs');
+const shellJs = require('shelljs');
 // Simple Git with Promise for handling success and failure
 const simpleGitPromise = require('simple-git/promise')();
   octokit.authenticate({
@@ -16,7 +16,7 @@ var description = "repo creation using git api";
 /*const createGitHubRepo =  octokit.repos.create(
    {'myrepo', repoDescription}
 );*/
-//shellJs.cd('path/to/repo/folder');
+shellJs.cd('D:\Gangadhar\github\aaa');
 // Repo name
 const repo = 'dummy';  //Repo name
 // User name and password of your GitHub

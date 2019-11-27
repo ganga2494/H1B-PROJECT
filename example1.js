@@ -3,6 +3,7 @@ const octokit = require('@octokit/rest')();
 const simpleGit = require('simple-git')();
 // Shelljs package for running shell tasks optional
 const shellJs = require('shelljs');
+
 // Simple Git with Promise for handling success and failure
 const simpleGitPromise = require('simple-git/promise')();
   octokit.authenticate({

@@ -25,8 +25,8 @@ console.log(filename)
 	const simpleGitPromise = require('simple-git/promise')();
 	octokit.authenticate({
 		type: 'basic',
-		username: 'ganga2494',
-		password: 'Karanam@2494'
+		username: 'Gangadhar.Karanam',
+		password: 'Ganga1234567'
 	});
 
 	var description = "repo creation using git api";
@@ -36,11 +36,11 @@ console.log(filename)
 	const userName = 'ganga2494';
 	//const password = 'Karanam@2494';
 	// Set up GitHub url like this so no manual entry of user pass needed
-	const gitHubUrl = `https://github.com/${userName}/H1B-PROJECT`;
+	const gitHubUrl = `http://gitlab.egs.net/Gangadhar.Karanam/smapleproject`;
 	console.log(gitHubUrl)
 	// add local git config like username and email
-	simpleGit.addConfig('user.email', 'ganga2494@gmail.com');
-	simpleGit.addConfig('user.name', 'gangadhar');
+	// simpleGit.addConfig('user.email', 'ganga2494@gmail.com');
+	// simpleGit.addConfig('user.name', 'gangadhar');
 	// Add remore repo url as origin to repo
 	//simpleGitPromise.addRemote('origin3',gitHubUrl);
 	// Add all files for commit
